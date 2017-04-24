@@ -18,7 +18,7 @@ Changes made:
 * Adapted `build.gradle` file which looks for all the Corda dependencies in the `/lib/dependencies` folder
 * Adapted `gradle-wrapper.properties` file which looks for `gradle-3.4.1-all.zip` in the `/gradle` folder
   
-**Note:** All teh dependencies are included in this repo.
+**Note:** All the dependencies and Gradle are included in this repo.
 
 TODO:
 
