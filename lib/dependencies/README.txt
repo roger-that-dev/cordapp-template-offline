@@ -1,4 +1,4 @@
-You'll need all the following dependencies, ask me for an easy way to get hold of them.
+The following dependencies are required for M10.1:
 
 HikariCP-2.5.1.jar
 annotations-13.0.jar
