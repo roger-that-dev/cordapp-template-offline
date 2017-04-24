@@ -26,4 +26,4 @@ resulting repository *with* the dependencies would be for internal distribution 
 TODO:
 
 * Add a script to auto gather the dependencies as per http://stackoverflow.com/questions/28436473/build-gradle-repository-for-offline-development, as such there will be no need to manually gather the dependencies which is irritating/time consuming
-* Add a switch to the`build.gradle` file which allows one to run a build in off-line or online mode - once this is in place we can merge this repo with the existing CorDapp template
+* Add a switch to the `build.gradle` file which allows one to run a build in off-line or online mode - once this is in place we can merge this repo with the existing CorDapp template
