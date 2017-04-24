@@ -15,15 +15,12 @@ Pre-requisites:
 
 Changes made:
 
-* Adapted `build.gradle` file which looks for all the Corda dependencies in the `/lib/dependencies` folder, there is a 
-  `README.txt` file that enumerates all the dependencies required to run the template
-* Adapted `gradle-wrapper.properties` file which looks for `gradle-3.4.1-all.zip` in the `/gradle` folder, there is a
-  `README.txt` file that shows you where you can find the gradle zip on your machine
+* Adapted `build.gradle` file which looks for all the Corda dependencies in the `/lib/dependencies` folder
+* Adapted `gradle-wrapper.properties` file which looks for `gradle-3.4.1-all.zip` in the `/gradle` folder
   
-**Note:** Clearly we cannot distribute the dependencies, therefore it's up to you to find them yourselves. As, such the
-resulting repository *with* the dependencies would be for internal distribution only.
+**Note:** All teh dependencies are included in this repo.
 
 TODO:
 
-* Add a script to auto gather the dependencies as per http://stackoverflow.com/questions/28436473/build-gradle-repository-for-offline-development, as such there will be no need to manually gather the dependencies which is irritating/time consuming
+* Add a script to auto gather the dependencies as per http://stackoverflow.com/questions/28436473/build-gradle-repository-for-offline-development, as such there will be no need to manually gather the dependencies for each Corda Milestone release which is irritating/time consuming
 * Add a switch to the `build.gradle` file which allows one to run a build in off-line or online mode - once this is in place we can merge this repo with the existing CorDapp template
