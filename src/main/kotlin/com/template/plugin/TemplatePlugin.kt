@@ -2,7 +2,6 @@ package com.template.plugin
 
 import com.template.api.TemplateApi
 import com.template.flow.TemplateFlow
-import com.template.service.TemplateService
 import net.corda.core.messaging.CordaRPCOps
 import net.corda.core.node.CordaPluginRegistry
 import net.corda.core.node.PluginServiceHub
@@ -14,18 +13,6 @@ class TemplatePlugin : CordaPluginRegistry() {
      * A list of classes that expose web APIs.
      */
     override val webApis: List<Function<CordaRPCOps, out Any>> = listOf(Function(::TemplateApi))
-
-    /**
-     * A list of flows required for this CorDapp.
-     */
-    override val requiredFlows: Map<String, Set<String>> = mapOf(
-            TemplateFlow.Initiator::class.java.name to setOf()
-    )
-
-    /**
-     * A list of long-lived services to be hosted within the node.
-     */
-    override val servicePlugins: List<Function<PluginServiceHub, out Any>> = listOf(Function(TemplateService::Service))
 
     /**
      * A list of directories in the resources directory that will be served by Jetty under /web.
